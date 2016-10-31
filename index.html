@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>芸情展15</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+     <script type="text/javascript">
+jQuery(function($) {
+  
+var nav    = $('.header'),
+    offset = nav.offset();
+  
+$(window).scroll(function () {
+  if($(window).scrollTop() > offset.top) {
+    nav.addClass('fixed');
+  } else {
+    nav.removeClass('fixed');
+  }
+});
+  
+});
+</script>
+
+ <script type="text/javascript">
+$(function() {
+    $('.menu li img')
+    .hover(
+        function(){
+            $(this).stop().animate({'marginTop':'-45px'},'fast');
+        },
+        function () {
+            $(this).stop().animate({'marginTop':'0px'},'fast');
+        }
+    );
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64867847-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    <div class="wrap ">
+	<div class="bg-top">
+	<img class="rogo" src="images/rogo.png" width="910px" alt="DON!">
+	</div>
+
+	<div class="header" >
+	 	<div class="menu">
+         <ul>
+	 	    <li><a href="index.html"><img src="images/nav1.png"  alt=""></a></li>
+	 	    <li><a href="works.html"><img src="images/nav2.png"  alt=""></a></li>
+	 	    <li><a href="info.html"><img src="images/nav3.png"  alt=""></a></li>
+	 	    <li><a href="link.html"><img src="images/nav4.png"  alt=""></a></li>
+        </ul>   
+	 	</div>
+	</div>
+
+	<div class="section s1">
+		<div class="geijotentoha">
+		<img class="setumei" src="images/geijotentoha.png" alt="芸情展とは">
+		<img src="images/bun1.png" height="250px" alt="" class="bun1">
+		</div>
+	</div>
+
+	<div class="section s2">
+		<div class="dontoha">
+		<img class="setumei" src="images/themetoha.png" alt="芸情展とは">
+		<img src="images/dontoha.png" height="190px"alt="" class="bun1">
+		
+		</div>
+	</div>
+
+	
+	<footer>
+        <p class="copyright">©　2015　geijo15</p>
+    </footer>
+
+	
+</div>
+</body>
+</html>

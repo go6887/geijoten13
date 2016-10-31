@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>芸情展15</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery.min.js"></script> 
+    
+    <script type="text/javascript">
+jQuery(function($) {
+  
+var nav    = $('.header'),
+    offset = nav.offset();
+  
+$(window).scroll(function () {
+  if($(window).scrollTop() > offset.top) {
+    nav.addClass('fixed');
+  } else {
+    nav.removeClass('fixed');
+  }
+});
+  
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $('.menu li img')
+    .hover(
+        function(){
+            $(this).stop().animate({'marginTop':'-45px'},'fast');
+        },
+        function () {
+            $(this).stop().animate({'marginTop':'0px'},'fast');
+        }
+    );
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64867847-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    <div class="wrap ">
+       <div class="bg-top">
+	<img class="rogo" src="images/rogo.png" width="910px" alt="DON!">
+	</div>
+
+	<div class="header" >
+	 	<div class="menu">
+         <ul>
+	 	    <li><a href="index.html"><img src="images/nav1.png"  alt=""></a></li>
+	 	    <li><a href="works.html"><img src="images/nav2.png"  alt=""></a></li>
+	 	    <li><a href="info.html"><img src="images/nav3.png"  alt=""></a></li>
+	 	    <li><a href="link.html"><img src="images/nav4.png"  alt=""></a></li>
+        </ul>   
+	 	</div>
+	</div>
+  
+   <div class="section-info s1-1">
+   <div class="day">
+       <img src="images/days2.png" width="800px" alt="日付" class="bun1">
+   </div>
+   </div>
+    
+   
+  <div class="section-info s2-1">
+    <div class="access">
+           <div class="ggmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662.3904128560303!2d130.42647422743053!3d33.55907044486119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541910316cc5bf3%3A0x488810e04f16744d!2z77ym77y177yr77y177yv77yr77yh44OH44K244Kk44Oz44Oq44O844Kw77yI77yu77yw77yv5rOV5Lq677yJ!5e0!3m2!1sja!2sjp!4v1436109536802" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div> 
+            
+        </div>
+        </div>
+        
+        <div class="section-info2">
+            <img src="images/where2.png" width="240px" alt="" class="lune">
+        </div>
+        
+        <footer>
+        <p class="copyright">©　2015　geijo15</p>
+        </footer>
+	</div>
+    
+</body>
+</html>
